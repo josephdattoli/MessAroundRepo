@@ -1,0 +1,82 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Oct 27 08:31:50 2020
+
+@author: joedattoli
+"""
+import pybaseball as pb
+import os 
+import pandas as pd
+import concurrent.futures
+from datetime import datetime
+
+#def get_player_id(name_tuple , df):
+   # name =  str(name_tuple[1]) +", "+ str(name_tuple[0])
+   # return pb.playerid_lookup(player_list = name_form_list)
+    
+
+def name_form_():
+    names = good_people_need[['nameFirst','nameLast']]
+    name_form_list = []
+    for i in range(len(good_people.index)):
+        row = names.iloc[i]
+        name_form = str(row[1]) +", "+ str(row[0])
+        name_form_list.append(name_form)
+    return name_form_list
+
+def get_lookup_table(name_list):
+  
+    return pb.playerid_lookup(player_list = name_list)
+
+def get_bbref_id(playerid,df):
+    row = df.loc[df['playerID'] == playerid]
+    return row['bbrefID'].values
+
+def get_fgid_id(bbref,df):
+    
+    row = df.loc[df['key_bbref'] ==bbref]
+    return row['key_fangraphs'].values
+
+    
+def put_bbrefid_in(salframe):
+    salframe['bbrefID'] = ['' for i in range(len(salframe.index))]
+    for i in range(len(salframe.index)):
+        row = salframe.iloc[i]
+        bbrefid = get_bbref_id(row['playerID'],good_people_need)
+        salframe.loc[salframe.playerID == row['playerID'], 'bbrefID'] = bbrefid
+    return salframe
+
+def put_fgid_in(salframe):
+    salframe['fgid'] = ['' for i in range(len(salframe.index))]
+    for i in range(len(salframe.index)):
+        row = salframe.iloc[i]
+        fgid = get_fgid_id(row['bbrefID'],fgid_table)
+        salframe.loc[salframe.playerID == row['playerID'], 'fgid'] = fgid
+    return salframe
+
+
+    
+if __name__ == "__main__":
+    
+    print(datetime.now())
+    pb.download_lahman()
+    people = pb.people()
+    good_people = people.loc[people['debut'] >= '2012-01-01']
+    good_people_need = good_people[['nameFirst','nameLast','debut','bbrefID', 'playerID']]
+    good_people_list = list(good_people['playerID'].values)
+    full_names = name_form_()
+
+    fgid_table = get_lookup_table(full_names)
+    fgid_table.to_csv(r"/Users/joedattoli/Documents/GitHub/MessAroundRepo/fangraphslookup")
+    print(datetime.now())
+    """
+    salaries = pb.salaries().reset_index(drop = True)
+    salaries_good = salaries.loc[salaries['playerID'].isin(good_people_list)].reset_index(drop = True)
+    salaries_good = salaries_good.iloc[0:10]
+    salaries_gooder = put_bbrefid_in(salaries_good)
+    saleries_gooderer = put_fgid_in(salaries_gooder)
+    """
+
+
+

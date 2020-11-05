@@ -96,3 +96,6 @@ print('The results of problem three programming.')
 print(result_3)
 print('Notice that the solution is ' + str(result_3.x))
 
+
+import webbrowser
+webbrowser.open("https://www.youtube.com/watch?v=oHg5SJYRHA0")

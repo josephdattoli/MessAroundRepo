@@ -1,0 +1,62 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Oct 30 11:38:43 2020
+
+@author: joedattoli
+"""
+import pandas as pd
+
+import seaborn as sb
+import matplotlib.pyplot as plt
+import numpy as np
+
+
+sexy_coprimes = pd.read_csv(r"/Users/joedattoli/Documents/GitHub/MessAroundRepo/salarydata", index_col = 'Unnamed: 0')
+
+def predict(c2,c1,c,x):
+    return(c2*(x**2)+c1*x+c)
+
+def salary_predictor(war1,war2,war3,war4,war5):
+    total_war = war1+war2+war3
+    salary_list = []
+    
+    fourth_year = sexy_coprimes.loc[sexy_coprimes['year'] == 3]
+    
+    x4 = fourth_year['trail_career_war'].values
+    y4 = fourth_year['salary'].values
+    
+    z4 = np.polyfit(x4,y4,2)
+    print(z4)
+    sal4 = predict(z4[0],z4[1],z4[2],total_war)
+
+    
+    fifth_year = sexy_coprimes.loc[sexy_coprimes['year'] == 4]
+    total_war +=war4
+    x5 = fifth_year['trail_career_war'].values
+    y5 = fifth_year['salary'].values
+    
+    z5 = np.polyfit(x5,y5,2)
+    print(z5)
+    sal5 = predict(z5[0],z5[1],z5[2],total_war)
+
+    
+    sixth_year = sexy_coprimes.loc[sexy_coprimes['year'] == 5]
+    total_war += war5
+    x6 = sixth_year['trail_career_war']
+    y6 = sixth_year['salary'].values
+    
+    z6 = np.polyfit(x6,y6,2)
+    print(z6)
+    sal6 = predict(z6[0],z6[1],z6[2],total_war)
+
+    salary_list.append(sal4)
+    salary_list.append(sal5)
+    salary_list.append(sal6)
+    
+    return salary_list
+    
+
+albies = salary_predictor(1.9,3.8,4.6,4.8,5.0)
+jiminez = salary_predictor(1.9,1.7,2.6,2.7,3.0)
+white = salary_predictor(-0.2,0.4,1.4,2.4,3.0)

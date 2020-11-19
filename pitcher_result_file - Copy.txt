@@ -1,0 +1,456 @@
+This file contains the results of the linear programming model for pitcher selection.
+
+The results of the optimization for budget of $5 million: 
+These are the optimal starters for this budget: 
+SP: Shane Bieber   WAR: 4.57   Salary: $0.6mil 
+SP: Luis Castillo   WAR: 4.54   Salary: $0.6mil 
+SP: Lucas Giolito   WAR: 5.71   Salary: $0.6mil 
+SP: John Means   WAR: 4.84   Salary: $0.6mil 
+
+ These are the optimal Relievers for this budget: 
+RP: Tyler Clippard   WAR: 1.3   Salary: $0.6mil 
+RP: Sam Freeman   WAR: 0.03   Salary: $0.6mil 
+RP: Tyler Glasnow   WAR: 2.52   Salary: $0.6mil 
+RP: Francisco Liriano   WAR: 1.04   Salary: $0.6mil 
+RP: Seth Lugo   WAR: 2.3   Salary: $0.6mil 
+RP: Hector Santiago   WAR: -0.13   Salary: $0.6mil 
+
+ Please Choose from list below to complete: 
+Flex: Fernando Abad   WAR: 0.14   Salary: $0.1mil 
+Flex: Mike Clevinger   WAR: 4.08   Salary: $0.6mil 
+Flex: Jack Flaherty   WAR: 5.72   Salary: $0.6mil 
+Flex: Jeanmar Gomez   WAR: -0.3   Salary: $0.1mil 
+Flex: Josh Hader   WAR: 2.67   Salary: $0.7mil 
+
+
+Without Flex...  Total WAR: 26.7  Total Salary: $5.586mil 
+
+The results of the optimization for budget of $10 million: 
+These are the optimal starters for this budget: 
+SP: John Means   WAR: 4.84   Salary: $0.6mil 
+
+ These are the optimal Relievers for this budget: 
+RP: Tyler Glasnow   WAR: 2.52   Salary: $1.3mil 
+RP: Josh Hader   WAR: 2.67   Salary: $1.3mil 
+RP: Liam Hendriks   WAR: 3.52   Salary: $1.3mil 
+RP: Seth Lugo   WAR: 2.3   Salary: $1.3mil 
+RP: Luke Weaver   WAR: 1.63   Salary: $1.3mil 
+RP: Brandon Workman   WAR: 3.18   Salary: $1.3mil 
+
+ Please Choose from list below to complete: 
+Flex: Shane Bieber   WAR: 4.57   Salary: $0.6mil 
+Flex: Luis Castillo   WAR: 4.54   Salary: $0.6mil 
+Flex: Jack Flaherty   WAR: 5.72   Salary: $0.6mil 
+Flex: Francisco Liriano   WAR: 1.04   Salary: $0.1mil 
+Flex: Hansel Robles   WAR: 2.57   Salary: $1.4mil 
+
+
+Without Flex...  Total WAR: 20.7  Total Salary: $8.356mil 
+
+The results of the optimization for budget of $15 million: 
+These are the optimal starters for this budget: 
+SP: Shane Bieber   WAR: 4.57   Salary: $0.6mil 
+SP: Jack Flaherty   WAR: 5.72   Salary: $0.6mil 
+SP: Lucas Giolito   WAR: 5.71   Salary: $0.6mil 
+SP: John Means   WAR: 4.84   Salary: $0.6mil 
+
+ These are the optimal Relievers for this budget: 
+RP: Tyler Glasnow   WAR: 2.52   Salary: $0.6mil 
+RP: Josh Hader   WAR: 2.67   Salary: $0.6mil 
+RP: Liam Hendriks   WAR: 3.52   Salary: $0.6mil 
+RP: Seth Lugo   WAR: 2.3   Salary: $0.6mil 
+RP: Hansel Robles   WAR: 2.57   Salary: $0.6mil 
+RP: Taylor Rogers   WAR: 2.51   Salary: $0.6mil 
+RP: Brandon Workman   WAR: 3.18   Salary: $0.6mil 
+
+ Please Choose from list below to complete: 
+Flex: Luis Castillo   WAR: 4.54   Salary: $0.6mil 
+Flex: Scott Oberg   WAR: 2.37   Salary: $1.3mil 
+Flex: Eduardo Rodriguez   WAR: 5.94   Salary: $4.3mil 
+
+
+Without Flex...  Total WAR: 40.1  Total Salary: $6.296mil 
+
+The results of the optimization for budget of $20 million: 
+These are the optimal starters for this budget: 
+SP: Jack Flaherty   WAR: 5.72   Salary: $0.6mil 
+SP: Lucas Giolito   WAR: 5.71   Salary: $0.6mil 
+SP: John Means   WAR: 4.84   Salary: $0.6mil 
+SP: Eduardo Rodriguez   WAR: 5.94   Salary: $4.3mil 
+
+ These are the optimal Relievers for this budget: 
+RP: Tyler Glasnow   WAR: 2.52   Salary: $2.5mil 
+RP: Josh Hader   WAR: 2.67   Salary: $2.5mil 
+RP: Liam Hendriks   WAR: 3.52   Salary: $2.5mil 
+RP: Seth Lugo   WAR: 2.3   Salary: $2.5mil 
+RP: Scott Oberg   WAR: 2.37   Salary: $2.5mil 
+RP: Hansel Robles   WAR: 2.57   Salary: $2.5mil 
+RP: Taylor Rogers   WAR: 2.51   Salary: $2.5mil 
+
+ Please Choose from list below to complete: 
+Flex: Shane Bieber   WAR: 4.57   Salary: $0.6mil 
+Flex: Jacob deGrom   WAR: 7.57   Salary: $9.0mil 
+Flex: Brandon Workman   WAR: 3.18   Salary: $1.2mil 
+Flex: Kirby Yates   WAR: 2.96   Salary: $3.1mil 
+
+
+Without Flex...  Total WAR: 40.7  Total Salary: $23.491mil 
+
+The results of the optimization for budget of $25 million: 
+These are the optimal starters for this budget: 
+SP: Jacob deGrom   WAR: 7.57   Salary: $9.0mil 
+SP: Jack Flaherty   WAR: 5.72   Salary: $0.6mil 
+SP: Lucas Giolito   WAR: 5.71   Salary: $0.6mil 
+SP: John Means   WAR: 4.84   Salary: $0.6mil 
+
+ These are the optimal Relievers for this budget: 
+RP: Tyler Glasnow   WAR: 2.52   Salary: $0.6mil 
+RP: Josh Hader   WAR: 2.67   Salary: $0.6mil 
+RP: Liam Hendriks   WAR: 3.52   Salary: $0.6mil 
+RP: Seth Lugo   WAR: 2.3   Salary: $0.6mil 
+RP: Scott Oberg   WAR: 2.37   Salary: $0.6mil 
+RP: Hansel Robles   WAR: 2.57   Salary: $0.6mil 
+RP: Taylor Rogers   WAR: 2.51   Salary: $0.6mil 
+
+ Please Choose from list below to complete: 
+Flex: Mike Minor   WAR: 7.8   Salary: $9.8mil 
+Flex: Eduardo Rodriguez   WAR: 5.94   Salary: $4.3mil 
+Flex: Brandon Workman   WAR: 3.18   Salary: $1.2mil 
+Flex: Kirby Yates   WAR: 2.96   Salary: $3.1mil 
+
+
+Without Flex...  Total WAR: 42.3  Total Salary: $14.576mil 
+
+The results of the optimization for budget of $30 million: 
+These are the optimal starters for this budget: 
+SP: Jacob deGrom   WAR: 7.57   Salary: $9.0mil 
+SP: Jack Flaherty   WAR: 5.72   Salary: $0.6mil 
+SP: Lucas Giolito   WAR: 5.71   Salary: $0.6mil 
+SP: John Means   WAR: 4.84   Salary: $0.6mil 
+SP: Mike Minor   WAR: 7.8   Salary: $9.8mil 
+
+ These are the optimal Relievers for this budget: 
+RP: Tyler Glasnow   WAR: 2.52   Salary: $0.6mil 
+RP: Josh Hader   WAR: 2.67   Salary: $0.6mil 
+RP: Hansel Robles   WAR: 2.57   Salary: $0.6mil 
+RP: Taylor Rogers   WAR: 2.51   Salary: $0.6mil 
+
+ Please Choose from list below to complete: 
+Flex: Liam Hendriks   WAR: 3.52   Salary: $2.2mil 
+Flex: Seth Lugo   WAR: 2.3   Salary: $0.6mil 
+Flex: Scott Oberg   WAR: 2.37   Salary: $1.3mil 
+Flex: Eduardo Rodriguez   WAR: 5.94   Salary: $4.3mil 
+Flex: Kirby Yates   WAR: 2.96   Salary: $3.1mil 
+
+
+Without Flex...  Total WAR: 41.9  Total Salary: $22.76mil 
+
+The results of the optimization for budget of $35 million: 
+These are the optimal starters for this budget: 
+SP: Jacob deGrom   WAR: 7.57   Salary: $9.0mil 
+SP: Jack Flaherty   WAR: 5.72   Salary: $0.6mil 
+SP: Lucas Giolito   WAR: 5.71   Salary: $0.6mil 
+
+ These are the optimal Relievers for this budget: 
+RP: Tyler Glasnow   WAR: 2.52   Salary: $0.6mil 
+RP: Josh Hader   WAR: 2.67   Salary: $0.6mil 
+RP: Liam Hendriks   WAR: 3.52   Salary: $0.6mil 
+RP: Seth Lugo   WAR: 2.3   Salary: $0.6mil 
+RP: Hansel Robles   WAR: 2.57   Salary: $0.6mil 
+RP: Taylor Rogers   WAR: 2.51   Salary: $0.6mil 
+
+ Please Choose from list below to complete: 
+Flex: Brett Anderson   WAR: 2.59   Salary: $1.5mil 
+Flex: Lance Lynn   WAR: 7.51   Salary: $9.3mil 
+Flex: John Means   WAR: 4.84   Salary: $0.6mil 
+Flex: Mike Minor   WAR: 7.8   Salary: $9.8mil 
+Flex: Scott Oberg   WAR: 2.37   Salary: $1.3mil 
+Flex: Brandon Workman   WAR: 3.18   Salary: $1.2mil 
+
+
+Without Flex...  Total WAR: 35.1  Total Salary: $13.585mil 
+
+The results of the optimization for budget of $40 million: 
+These are the optimal starters for this budget: 
+SP: Jack Flaherty   WAR: 5.72   Salary: $0.6mil 
+SP: Lucas Giolito   WAR: 5.71   Salary: $0.6mil 
+
+ These are the optimal Relievers for this budget: 
+RP: Tyler Glasnow   WAR: 2.52   Salary: $8.5mil 
+RP: Josh Hader   WAR: 2.67   Salary: $8.5mil 
+RP: Seth Lugo   WAR: 2.3   Salary: $8.5mil 
+RP: Hansel Robles   WAR: 2.57   Salary: $8.5mil 
+RP: Taylor Rogers   WAR: 2.51   Salary: $8.5mil 
+RP: Brandon Workman   WAR: 3.18   Salary: $8.5mil 
+RP: Kirby Yates   WAR: 2.96   Salary: $8.5mil 
+
+ Please Choose from list below to complete: 
+Flex: Jacob deGrom   WAR: 7.57   Salary: $9.0mil 
+Flex: Liam Hendriks   WAR: 3.52   Salary: $2.2mil 
+Flex: Lance Lynn   WAR: 7.51   Salary: $9.3mil 
+Flex: John Means   WAR: 4.84   Salary: $0.6mil 
+Flex: Mike Minor   WAR: 7.8   Salary: $9.8mil 
+Flex: Scott Oberg   WAR: 2.37   Salary: $1.3mil 
+
+
+Without Flex...  Total WAR: 30.1  Total Salary: $60.635mil 
+
+The results of the optimization for budget of $45 million: 
+These are the optimal starters for this budget: 
+SP: Jacob deGrom   WAR: 7.57   Salary: $9.0mil 
+SP: Jack Flaherty   WAR: 5.72   Salary: $0.6mil 
+SP: Lance Lynn   WAR: 7.51   Salary: $9.3mil 
+
+ These are the optimal Relievers for this budget: 
+RP: Tyler Glasnow   WAR: 2.52   Salary: $1.4mil 
+RP: Josh Hader   WAR: 2.67   Salary: $1.4mil 
+RP: Liam Hendriks   WAR: 3.52   Salary: $1.4mil 
+RP: Felipe Vazquez   WAR: 2.94   Salary: $1.4mil 
+RP: Hansel Robles   WAR: 2.57   Salary: $1.4mil 
+RP: Taylor Rogers   WAR: 2.51   Salary: $1.4mil 
+RP: Brandon Workman   WAR: 3.18   Salary: $1.4mil 
+RP: Kirby Yates   WAR: 2.96   Salary: $1.4mil 
+
+ Please Choose from list below to complete: 
+Flex: Gerrit Cole   WAR: 6.63   Salary: $13.5mil 
+Flex: Lucas Giolito   WAR: 5.71   Salary: $0.6mil 
+Flex: Mike Minor   WAR: 7.8   Salary: $9.8mil 
+Flex: Scott Oberg   WAR: 2.37   Salary: $1.3mil 
+
+
+Without Flex...  Total WAR: 43.7  Total Salary: $29.695mil 
+
+The results of the optimization for budget of $50 million: 
+These are the optimal starters for this budget: 
+SP: Jacob deGrom   WAR: 7.57   Salary: $9.0mil 
+SP: Jack Flaherty   WAR: 5.72   Salary: $0.6mil 
+SP: Lance Lynn   WAR: 7.51   Salary: $9.3mil 
+
+ These are the optimal Relievers for this budget: 
+RP: Tyler Glasnow   WAR: 2.52   Salary: $1.9mil 
+RP: Josh Hader   WAR: 2.67   Salary: $1.9mil 
+RP: Liam Hendriks   WAR: 3.52   Salary: $1.9mil 
+RP: Felipe Vazquez   WAR: 2.94   Salary: $1.9mil 
+RP: Hansel Robles   WAR: 2.57   Salary: $1.9mil 
+RP: Taylor Rogers   WAR: 2.51   Salary: $1.9mil 
+RP: Brandon Workman   WAR: 3.18   Salary: $1.9mil 
+RP: Kirby Yates   WAR: 2.96   Salary: $1.9mil 
+
+ Please Choose from list below to complete: 
+Flex: Gerrit Cole   WAR: 6.63   Salary: $13.5mil 
+Flex: Lucas Giolito   WAR: 5.71   Salary: $0.6mil 
+Flex: Mike Minor   WAR: 7.8   Salary: $9.8mil 
+
+
+Without Flex...  Total WAR: 43.7  Total Salary: $34.295mil 
+
+The results of the optimization for budget of $55 million: 
+These are the optimal starters for this budget: 
+SP: Jacob deGrom   WAR: 7.57   Salary: $9.0mil 
+SP: Jack Flaherty   WAR: 5.72   Salary: $0.6mil 
+SP: Lance Lynn   WAR: 7.51   Salary: $9.3mil 
+
+ These are the optimal Relievers for this budget: 
+RP: Tyler Glasnow   WAR: 2.52   Salary: $0.6mil 
+RP: Josh Hader   WAR: 2.67   Salary: $0.6mil 
+RP: Liam Hendriks   WAR: 3.52   Salary: $0.6mil 
+RP: Felipe Vazquez   WAR: 2.94   Salary: $0.6mil 
+RP: Hansel Robles   WAR: 2.57   Salary: $0.6mil 
+RP: Taylor Rogers   WAR: 2.51   Salary: $0.6mil 
+RP: Brandon Workman   WAR: 3.18   Salary: $0.6mil 
+RP: Kirby Yates   WAR: 2.96   Salary: $0.6mil 
+
+ Please Choose from list below to complete: 
+Flex: Gerrit Cole   WAR: 6.63   Salary: $13.5mil 
+Flex: Lucas Giolito   WAR: 5.71   Salary: $0.6mil 
+Flex: Mike Minor   WAR: 7.8   Salary: $9.8mil 
+
+
+Without Flex...  Total WAR: 43.7  Total Salary: $23.46mil 
+
+The results of the optimization for budget of $60 million: 
+These are the optimal starters for this budget: 
+SP: Gerrit Cole   WAR: 6.63   Salary: $13.5mil 
+SP: Jacob deGrom   WAR: 7.57   Salary: $9.0mil 
+SP: Lance Lynn   WAR: 7.51   Salary: $9.3mil 
+
+ These are the optimal Relievers for this budget: 
+RP: Tyler Glasnow   WAR: 2.52   Salary: $1.5mil 
+RP: Josh Hader   WAR: 2.67   Salary: $1.5mil 
+RP: Liam Hendriks   WAR: 3.52   Salary: $1.5mil 
+RP: Felipe Vazquez   WAR: 2.94   Salary: $1.5mil 
+RP: Hansel Robles   WAR: 2.57   Salary: $1.5mil 
+RP: Taylor Rogers   WAR: 2.51   Salary: $1.5mil 
+RP: Kirby Yates   WAR: 2.96   Salary: $1.5mil 
+
+ Please Choose from list below to complete: 
+Flex: Jack Flaherty   WAR: 5.72   Salary: $0.6mil 
+Flex: Mike Minor   WAR: 7.8   Salary: $9.8mil 
+Flex: Scott Oberg   WAR: 2.37   Salary: $1.3mil 
+Flex: Justin Verlander   WAR: 7.39   Salary: $28.0mil 
+
+
+Without Flex...  Total WAR: 41.4  Total Salary: $42.333mil 
+
+The results of the optimization for budget of $65 million: 
+These are the optimal starters for this budget: 
+SP: Gerrit Cole   WAR: 6.63   Salary: $13.5mil 
+SP: Jacob deGrom   WAR: 7.57   Salary: $9.0mil 
+SP: Lance Lynn   WAR: 7.51   Salary: $9.3mil 
+
+ These are the optimal Relievers for this budget: 
+RP: Tyler Glasnow   WAR: 2.52   Salary: $6.5mil 
+RP: Josh Hader   WAR: 2.67   Salary: $6.5mil 
+RP: Liam Hendriks   WAR: 3.52   Salary: $6.5mil 
+RP: Felipe Vazquez   WAR: 2.94   Salary: $6.5mil 
+RP: Hansel Robles   WAR: 2.57   Salary: $6.5mil 
+RP: Brandon Workman   WAR: 3.18   Salary: $6.5mil 
+RP: Kirby Yates   WAR: 2.96   Salary: $6.5mil 
+
+ Please Choose from list below to complete: 
+Flex: Jack Flaherty   WAR: 5.72   Salary: $0.6mil 
+Flex: Mike Minor   WAR: 7.8   Salary: $9.8mil 
+Flex: Taylor Rogers   WAR: 2.51   Salary: $1.5mil 
+Flex: Justin Verlander   WAR: 7.39   Salary: $28.0mil 
+
+
+Without Flex...  Total WAR: 42.1  Total Salary: $77.333mil 
+
+The results of the optimization for budget of $70 million: 
+These are the optimal starters for this budget: 
+SP: Gerrit Cole   WAR: 6.63   Salary: $13.5mil 
+SP: Jacob deGrom   WAR: 7.57   Salary: $9.0mil 
+SP: Lance Lynn   WAR: 7.51   Salary: $9.3mil 
+
+ These are the optimal Relievers for this budget: 
+RP: Tyler Glasnow   WAR: 2.52   Salary: $0.6mil 
+RP: Josh Hader   WAR: 2.67   Salary: $0.6mil 
+RP: Liam Hendriks   WAR: 3.52   Salary: $0.6mil 
+RP: Felipe Vazquez   WAR: 2.94   Salary: $0.6mil 
+RP: Hansel Robles   WAR: 2.57   Salary: $0.6mil 
+RP: Taylor Rogers   WAR: 2.51   Salary: $0.6mil 
+RP: Brandon Workman   WAR: 3.18   Salary: $0.6mil 
+RP: Kirby Yates   WAR: 2.96   Salary: $0.6mil 
+
+ Please Choose from list below to complete: 
+Flex: Jack Flaherty   WAR: 5.72   Salary: $0.6mil 
+Flex: Mike Minor   WAR: 7.8   Salary: $9.8mil 
+Flex: Scott Oberg   WAR: 2.37   Salary: $1.3mil 
+Flex: Justin Verlander   WAR: 7.39   Salary: $28.0mil 
+
+
+Without Flex...  Total WAR: 44.6  Total Salary: $36.963mil 
+
+The results of the optimization for budget of $75 million: 
+These are the optimal starters for this budget: 
+SP: Gerrit Cole   WAR: 6.63   Salary: $13.5mil 
+SP: Jacob deGrom   WAR: 7.57   Salary: $9.0mil 
+
+ These are the optimal Relievers for this budget: 
+RP: Tyler Glasnow   WAR: 2.52   Salary: $0.6mil 
+RP: Josh Hader   WAR: 2.67   Salary: $0.6mil 
+RP: Liam Hendriks   WAR: 3.52   Salary: $0.6mil 
+RP: Felipe Vazquez   WAR: 2.94   Salary: $0.6mil 
+RP: Hansel Robles   WAR: 2.57   Salary: $0.6mil 
+RP: Taylor Rogers   WAR: 2.51   Salary: $0.6mil 
+RP: Kirby Yates   WAR: 2.96   Salary: $0.6mil 
+
+ Please Choose from list below to complete: 
+Flex: Jack Flaherty   WAR: 5.72   Salary: $0.6mil 
+Flex: Lance Lynn   WAR: 7.51   Salary: $9.3mil 
+Flex: Scott Oberg   WAR: 2.37   Salary: $1.3mil 
+Flex: Justin Verlander   WAR: 7.39   Salary: $28.0mil 
+Flex: Brandon Workman   WAR: 3.18   Salary: $1.2mil 
+
+
+Without Flex...  Total WAR: 33.9  Total Salary: $26.43mil 
+
+The results of the optimization for budget of $80 million: 
+These are the optimal starters for this budget: 
+SP: Gerrit Cole   WAR: 6.63   Salary: $13.5mil 
+SP: Jacob deGrom   WAR: 7.57   Salary: $9.0mil 
+
+ These are the optimal Relievers for this budget: 
+RP: Tyler Glasnow   WAR: 2.52   Salary: $0.6mil 
+RP: Josh Hader   WAR: 2.67   Salary: $0.6mil 
+RP: Liam Hendriks   WAR: 3.52   Salary: $0.6mil 
+RP: Felipe Vazquez   WAR: 2.94   Salary: $0.6mil 
+RP: Hansel Robles   WAR: 2.57   Salary: $0.6mil 
+RP: Taylor Rogers   WAR: 2.51   Salary: $0.6mil 
+RP: Brandon Workman   WAR: 3.18   Salary: $0.6mil 
+RP: Kirby Yates   WAR: 2.96   Salary: $0.6mil 
+
+ Please Choose from list below to complete: 
+Flex: Jack Flaherty   WAR: 5.72   Salary: $0.6mil 
+Flex: Mike Minor   WAR: 7.8   Salary: $9.8mil 
+Flex: Scott Oberg   WAR: 2.37   Salary: $1.3mil 
+Flex: Justin Verlander   WAR: 7.39   Salary: $28.0mil 
+
+
+Without Flex...  Total WAR: 37.1  Total Salary: $26.94mil 
+
+The results of the optimization for budget of $85 million: 
+These are the optimal starters for this budget: 
+SP: Gerrit Cole   WAR: 6.63   Salary: $13.5mil 
+SP: Jacob deGrom   WAR: 7.57   Salary: $9.0mil 
+SP: Lance Lynn   WAR: 7.51   Salary: $9.3mil 
+SP: Mike Minor   WAR: 7.8   Salary: $9.8mil 
+SP: Justin Verlander   WAR: 7.39   Salary: $28.0mil 
+
+ These are the optimal Relievers for this budget: 
+RP: Tyler Glasnow   WAR: 2.52   Salary: $2.6mil 
+RP: Josh Hader   WAR: 2.67   Salary: $2.6mil 
+RP: Liam Hendriks   WAR: 3.52   Salary: $2.6mil 
+RP: Brandon Workman   WAR: 3.18   Salary: $2.6mil 
+RP: Kirby Yates   WAR: 2.96   Salary: $2.6mil 
+
+ Please Choose from list below to complete: 
+
+
+Without Flex...  Total WAR: 59.8  Total Salary: $90.667mil 
+
+The results of the optimization for budget of $90 million: 
+These are the optimal starters for this budget: 
+SP: Gerrit Cole   WAR: 6.63   Salary: $13.5mil 
+SP: Jacob deGrom   WAR: 7.57   Salary: $9.0mil 
+SP: Lance Lynn   WAR: 7.51   Salary: $9.3mil 
+SP: Mike Minor   WAR: 7.8   Salary: $9.8mil 
+SP: Justin Verlander   WAR: 7.39   Salary: $28.0mil 
+
+ These are the optimal Relievers for this budget: 
+RP: Tyler Glasnow   WAR: 2.52   Salary: $0.9mil 
+RP: Josh Hader   WAR: 2.67   Salary: $0.9mil 
+RP: Liam Hendriks   WAR: 3.52   Salary: $0.9mil 
+RP: Felipe Vazquez   WAR: 2.94   Salary: $0.9mil 
+RP: Hansel Robles   WAR: 2.57   Salary: $0.9mil 
+RP: Taylor Rogers   WAR: 2.51   Salary: $0.9mil 
+RP: Brandon Workman   WAR: 3.18   Salary: $0.9mil 
+RP: Kirby Yates   WAR: 2.96   Salary: $0.9mil 
+
+ Please Choose from list below to complete: 
+
+
+Without Flex...  Total WAR: 59.8  Total Salary: $77.027mil 
+
+The results of the optimization for budget of $95 million: 
+These are the optimal starters for this budget: 
+SP: Gerrit Cole   WAR: 6.63   Salary: $13.5mil 
+SP: Jacob deGrom   WAR: 7.57   Salary: $9.0mil 
+SP: Lance Lynn   WAR: 7.51   Salary: $9.3mil 
+SP: Mike Minor   WAR: 7.8   Salary: $9.8mil 
+SP: Justin Verlander   WAR: 7.39   Salary: $28.0mil 
+
+ These are the optimal Relievers for this budget: 
+RP: Tyler Glasnow   WAR: 2.52   Salary: $0.6mil 
+RP: Josh Hader   WAR: 2.67   Salary: $0.6mil 
+RP: Liam Hendriks   WAR: 3.52   Salary: $0.6mil 
+RP: Felipe Vazquez   WAR: 2.94   Salary: $0.6mil 
+RP: Hansel Robles   WAR: 2.57   Salary: $0.6mil 
+RP: Taylor Rogers   WAR: 2.51   Salary: $0.6mil 
+RP: Brandon Workman   WAR: 3.18   Salary: $0.6mil 
+RP: Kirby Yates   WAR: 2.96   Salary: $0.6mil 
+
+ Please Choose from list below to complete: 
+
+
+Without Flex...  Total WAR: 59.8  Total Salary: $74.123mil 

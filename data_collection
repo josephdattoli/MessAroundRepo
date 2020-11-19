@@ -1,0 +1,31 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Nov 17 23:20:54 2020
+
+@author: joedattoli
+"""
+import pybaseball as pb
+import pandas as pd
+from time import sleep
+
+
+stats = pb.statcast('2015-01-01','2015-12-31')
+sleep(1)
+stats2 = pb.statcast('2016-01-01','2016-12-31')
+sleep(1)
+stats3 = pb.statcast('2017-01-01','2017-12-31')
+sleep(1)
+stats4 = pb.statcast('2018-01-01','2018-12-31')
+sleep(1)
+stats5 = pb.statcast('2019-01-01','2019-12-31')
+sleep(1)
+stats = stats.append([stats2,stats3,stats4], ignore_index = True)
+
+stats = stats.loc[stats['launch_speed'] >= 40]
+stats1 = stats[['batter','hit_distance_sc','launch_speed', 'launch_angle',
+                'estimated_ba_using_speedangle', 'estimated_woba_using_speedangle',
+                'woba_value','babip_value', 'iso_value']]
+
+stats1 = stats1.dropna()
+stats1.to_csv(r'test_file_statcast.csv', index=False)

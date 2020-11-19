@@ -1,0 +1,48 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Nov 18 03:07:55 2020
+
+@author: joedattoli
+"""
+import pybaseball as pb
+import pandas as pd
+from scipy.optimize import linprog
+
+stats = pd.read_csv(r'/Users/joedattoli/Desktop/CSVFILES/pwar_08_19.csv')
+stats = stats.loc[stats['year_ID'] == 2019].dropna().reset_index(drop = True)
+
+starters = stats.loc[stats['GS'] >= 15]
+stats['starter'] = [True if stats['player_ID'][k] in starters.player_ID.values else False for k in range(len(stats.index))]
+
+stats = stats[['name_common','player_ID','salary','WAR','starter']]
+
+roster_size = [-1 for i in range(len(stats.index))]
+starter_bool = [0 if stats['starter'][i] == False else 1 for i in range(len(stats.index))]
+reliever_bool = [1 if stats['starter'][i] == False else 0 for i in range(len(stats.index))]
+salary_list = stats.salary.values
+war = stats.WAR.values
+war = [-1*val for val in war]
+
+A = [starter_bool,
+     reliever_bool,
+     salary_list,
+     roster_size]
+
+b = [5,8,15000000, -13]
+
+result = linprog(war,A,b, bounds = [(0,1) for i in range(len(stats.index))], method = 'revised simplex')
+
+x = result.x
+print(sum(x))
+for i in range(len(x)):
+    if x[i] == 1:
+        print(stats['name_common'][i] , stats['WAR'][i],stats['salary'][i] )
+        
+print(-1*round(result.fun,1))
+print()
+for i in range(len(x)):
+    if x[i] >0:
+        if x[i]<1:
+            
+            print(stats['name_common'][i] , stats['WAR'][i],stats['salary'][i] )

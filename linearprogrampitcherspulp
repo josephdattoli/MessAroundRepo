@@ -1,0 +1,49 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Nov 19 04:42:22 2020
+
+@author: joedattoli
+"""
+import pulp as p
+import pandas as pd 
+
+pitcher_stats = pd.read_csv(r'/Users/joedattoli/Desktop/CSVFILES/pwar_08_19.csv')
+pitcher_stats = pitcher_stats.loc[pitcher_stats['year_ID'] == 2019].dropna().reset_index(drop = True)
+
+starters = pitcher_stats.loc[pitcher_stats['GS'] >= 15]
+pitcher_stats['starter'] = [True if pitcher_stats['player_ID'][k] in starters.player_ID.values else False for k in range(len(pitcher_stats.index))]
+
+pitcher_stats = pitcher_stats[['name_common','player_ID','salary','WAR','starter']]
+
+starter_bool = [0 if pitcher_stats['starter'][i] == False else 1 for i in range(len(pitcher_stats.index))]
+reliever_bool = [1 if pitcher_stats['starter'][i] == True else 0 for i in range(len(pitcher_stats.index))]
+
+pitcher_names = list(pitcher_stats.name_common.values)
+starter_names = list(pitcher_stats.loc[pitcher_stats['starter'] == True].name_common.values)
+reliever_names = list(pitcher_stats.loc[pitcher_stats['starter'] == False].name_common.values)
+
+war_dict = {}
+salary_dict = {}
+starter_dict = {}
+reliever_dict = {}
+for name in pitcher_names:
+    row = pitcher_stats.loc[pitcher_stats['name_common'] == name].reset_index(drop = True)
+    war_dict[name] = row['WAR']
+    salary_dict[name] = row['salary']
+    starter_dict[name] = 1 if row.loc[0,'starter'] == True else 0
+    reliever_dict[name] = 0 if row.loc[0,'starter'] == True else 1
+
+
+prob = p.LpProblem("The_Staff", p.LpMaximize)
+pitcher_vars = p.LpVariable.dict('P_', pitcher_names,lowBound=0, upBound = 1, cat ='Integer')
+
+prob += p.lpSum([war_dict[i]*pitcher_vars[i] for i in pitcher_names]), "Total WAR produced by optimal staff"
+prob += p.lpSum([starter_dict[i] * pitcher_vars[i] for i in pitcher_names]) == 5, 'Starter Req'
+prob += p.lpSum([reliever_dict[i] * pitcher_vars[i] for i in pitcher_names]) == 8, 'Reliever Req'
+prob += p.lpSum([salary_dict[i] * pitcher_vars[i] for i in pitcher_names ]) <= 80000000, 'Salary Cap'
+
+prob.writeLP('test_lp.lp')
+
+status = prob.solve(p.msg=True)
+print(p.LpStatus[prob.status])
